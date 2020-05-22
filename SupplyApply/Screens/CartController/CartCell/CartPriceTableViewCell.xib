@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartPriceTableViewCell" rowHeight="57" id="KGk-i7-Jjw" customClass="CartPriceTableViewCell" customModule="Supply_Apply" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aww-rh-upm" userLabel="View1">
+                        <rect key="frame" x="8" y="0.0" width="330" height="57"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="OPI Red Polish" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-d0-CBQ">
+                                <rect key="frame" x="8" y="14" width="96.5" height="29"/>
+                                <color key="tintColor" name="label"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" name="label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="OPI Red Polish" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szh-BG-Vb2">
+                                <rect key="frame" x="225.5" y="14" width="96.5" height="29"/>
+                                <color key="tintColor" name="label"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" name="label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Szh-BG-Vb2" firstAttribute="top" secondItem="aww-rh-upm" secondAttribute="top" constant="14" id="9Qz-2b-bWS"/>
+                            <constraint firstItem="vZZ-d0-CBQ" firstAttribute="top" secondItem="aww-rh-upm" secondAttribute="top" constant="14" id="GFq-jy-Yqz"/>
+                            <constraint firstAttribute="bottom" secondItem="vZZ-d0-CBQ" secondAttribute="bottom" constant="14" id="MGl-Pg-fKx"/>
+                            <constraint firstAttribute="trailing" secondItem="Szh-BG-Vb2" secondAttribute="trailing" constant="8" id="O4z-J3-8cj"/>
+                            <constraint firstAttribute="bottom" secondItem="Szh-BG-Vb2" secondAttribute="bottom" constant="14" id="Qhl-zX-r1w"/>
+                            <constraint firstItem="vZZ-d0-CBQ" firstAttribute="leading" secondItem="aww-rh-upm" secondAttribute="leading" constant="8" id="fBc-kp-V7m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aww-rh-upm" secondAttribute="bottom" id="9Sn-0j-R22"/>
+                    <constraint firstAttribute="trailing" secondItem="aww-rh-upm" secondAttribute="trailing" constant="8" id="ctL-PA-KLG"/>
+                    <constraint firstItem="aww-rh-upm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="w8V-wx-0Jq"/>
+                    <constraint firstItem="aww-rh-upm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zrJ-6C-zuy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSubTotal" destination="vZZ-d0-CBQ" id="OqB-3z-LqE"/>
+                <outlet property="lblSubTotalPrice" destination="Szh-BG-Vb2" id="TMJ-be-6vu"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="label">
+            <color red="0.45490196078431372" green="0.54117647058823526" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

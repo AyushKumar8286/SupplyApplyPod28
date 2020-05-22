@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (5.0.0-beta.2)
+  - AppCenter (3.1.1):
+    - AppCenter/Analytics (= 3.1.1)
+    - AppCenter/Crashes (= 3.1.1)
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - DropDown (2.3.13)
+  - GoogleMaps (3.8.2):
+    - GoogleMaps/Maps (= 3.8.2)
+  - GoogleMaps/Base (3.8.2)
+  - GoogleMaps/Maps (3.8.2):
+    - GoogleMaps/Base
+  - IQKeyboardManagerSwift (6.5.5)
+  - Nuke (8.4.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - Stripe (19.2.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0-beta.2)
+  - AppCenter
+  - DropDown
+  - GoogleMaps
+  - IQKeyboardManagerSwift
+  - Nuke
+  - NVActivityIndicatorView
+  - Stripe
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppCenter
+    - DropDown
+    - GoogleMaps
+    - IQKeyboardManagerSwift
+    - Nuke
+    - NVActivityIndicatorView
+    - Stripe
+
+SPEC CHECKSUMS:
+  Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GoogleMaps: ae0efe10e9c40bcd9decd0c9fd53d947af7801a3
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  Stripe: d481c2dab9a892fd923f097f854661217f70dc7f
+
+PODFILE CHECKSUM: 242c2fb73c5c981490457ddba87fadfb61a40c69
+
+COCOAPODS: 1.9.1

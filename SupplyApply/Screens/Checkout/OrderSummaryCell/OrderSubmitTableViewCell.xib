@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderSubmitTableViewCell" rowHeight="87" id="KGk-i7-Jjw" customClass="OrderSubmitTableViewCell" customModule="Supply_Apply" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-WT-68r">
+                        <rect key="frame" x="24" y="14" width="288" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-Dm-TIK">
+                                <rect key="frame" x="78.5" y="11" width="131" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Ee8-3D-fwi">
+                                        <rect key="frame" x="4" y="8" width="11" height="10"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLACE ORDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUU-lA-gep">
+                                        <rect key="frame" x="19" y="3.5" width="108" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" name="background"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ee8-3D-fwi" firstAttribute="leading" secondItem="VyW-Dm-TIK" secondAttribute="leading" constant="4" id="FYO-DD-edu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ee8-3D-fwi" secondAttribute="bottom" constant="8" id="Ft3-zg-OQ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="TUU-lA-gep" secondAttribute="trailing" constant="4" id="Nfw-me-YDO"/>
+                                    <constraint firstItem="TUU-lA-gep" firstAttribute="leading" secondItem="Ee8-3D-fwi" secondAttribute="trailing" constant="4" id="SDo-qZ-N6D"/>
+                                    <constraint firstItem="TUU-lA-gep" firstAttribute="centerY" secondItem="VyW-Dm-TIK" secondAttribute="centerY" id="bIF-R4-M9r"/>
+                                    <constraint firstItem="TUU-lA-gep" firstAttribute="leading" secondItem="Ee8-3D-fwi" secondAttribute="trailing" constant="4" id="ipj-4E-dY5"/>
+                                    <constraint firstItem="Ee8-3D-fwi" firstAttribute="centerY" secondItem="VyW-Dm-TIK" secondAttribute="centerY" id="wkY-G8-Iac"/>
+                                    <constraint firstItem="Ee8-3D-fwi" firstAttribute="top" secondItem="VyW-Dm-TIK" secondAttribute="top" constant="8" id="yOl-03-lrx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53725490200000003" green="0.52156862749999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VyW-Dm-TIK" firstAttribute="centerY" secondItem="Fow-WT-68r" secondAttribute="centerY" id="ims-hA-A1e"/>
+                            <constraint firstItem="VyW-Dm-TIK" firstAttribute="centerX" secondItem="Fow-WT-68r" secondAttribute="centerX" id="tmX-lq-VKc"/>
+                            <constraint firstAttribute="height" constant="48" id="wSa-Mw-8Go"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwY-cS-aE6">
+                        <rect key="frame" x="24" y="14" width="288" height="48"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="clickedBtnPlaceOrder:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cva-fc-JbX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fow-WT-68r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="5PB-fC-T65"/>
+                    <constraint firstAttribute="trailing" secondItem="Fow-WT-68r" secondAttribute="trailing" constant="24" id="LJ8-Jv-RV1"/>
+                    <constraint firstAttribute="bottom" secondItem="Fow-WT-68r" secondAttribute="bottom" constant="14" id="dHQ-7g-c5R"/>
+                    <constraint firstItem="jwY-cS-aE6" firstAttribute="top" secondItem="Fow-WT-68r" secondAttribute="top" id="gTC-kY-QPf"/>
+                    <constraint firstItem="Fow-WT-68r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="iz6-15-CmL"/>
+                    <constraint firstItem="jwY-cS-aE6" firstAttribute="bottom" secondItem="Fow-WT-68r" secondAttribute="bottom" id="lRH-6q-yiu"/>
+                    <constraint firstItem="jwY-cS-aE6" firstAttribute="trailing" secondItem="Fow-WT-68r" secondAttribute="trailing" id="oUA-kR-aW7"/>
+                    <constraint firstItem="jwY-cS-aE6" firstAttribute="leading" secondItem="Fow-WT-68r" secondAttribute="leading" id="pq6-x1-vaW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewPlaceOrder" destination="Fow-WT-68r" id="nwe-xT-oLx"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="118.86160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="11" height="10"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

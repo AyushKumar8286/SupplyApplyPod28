@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingTableCell" rowHeight="66" id="KGk-i7-Jjw" customClass="SettingsTableViewCell" customModule="Supply_Apply" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f83-VH-AZp">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffn-JR-hCF">
+                                <rect key="frame" x="64" y="10.5" width="39.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gi1-ZZ-O7N">
+                                <rect key="frame" x="333" y="8" width="37" height="24"/>
+                                <state key="normal" image="switch-off_toggle"/>
+                                <connections>
+                                    <action selector="clickedBtnToggle:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9Yx-uP-ffu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right arrow" translatesAutoresizingMaskIntoConstraints="NO" id="t10-BP-abs">
+                                <rect key="frame" x="355" y="16" width="8" height="8"/>
+                                <color key="tintColor" name="label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="PT7-CO-SVS"/>
+                                    <constraint firstAttribute="width" constant="8" id="Xap-7b-lBi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-3e-qxn">
+                                <rect key="frame" x="18" y="18" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="Gfb-vu-Vfd"/>
+                                    <constraint firstAttribute="height" constant="22" id="iEr-ui-tyv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="secondaryBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gi1-ZZ-O7N" secondAttribute="trailing" constant="8" id="3c7-th-5g8"/>
+                            <constraint firstItem="ffn-JR-hCF" firstAttribute="centerY" secondItem="f83-VH-AZp" secondAttribute="centerY" id="CPM-c0-pOk"/>
+                            <constraint firstAttribute="trailing" secondItem="t10-BP-abs" secondAttribute="trailing" constant="15" id="LKZ-cA-vyF"/>
+                            <constraint firstItem="Gi1-ZZ-O7N" firstAttribute="top" secondItem="f83-VH-AZp" secondAttribute="top" constant="8" id="OZR-gP-CWL"/>
+                            <constraint firstItem="sQB-3e-qxn" firstAttribute="top" secondItem="f83-VH-AZp" secondAttribute="top" constant="18" id="VOX-O4-jcR"/>
+                            <constraint firstItem="t10-BP-abs" firstAttribute="centerY" secondItem="f83-VH-AZp" secondAttribute="centerY" id="gYL-i2-XV6"/>
+                            <constraint firstAttribute="bottom" secondItem="Gi1-ZZ-O7N" secondAttribute="bottom" constant="8" id="j6O-CB-jL8"/>
+                            <constraint firstAttribute="bottom" secondItem="sQB-3e-qxn" secondAttribute="bottom" constant="18" id="lBv-lT-dxu"/>
+                            <constraint firstItem="ffn-JR-hCF" firstAttribute="leading" secondItem="sQB-3e-qxn" secondAttribute="trailing" constant="24" id="scL-Iq-Iec"/>
+                            <constraint firstItem="sQB-3e-qxn" firstAttribute="leading" secondItem="f83-VH-AZp" secondAttribute="leading" constant="18" id="yqZ-h7-miM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="f83-VH-AZp" secondAttribute="bottom" constant="5" id="ECv-rQ-x2X"/>
+                    <constraint firstAttribute="trailing" secondItem="f83-VH-AZp" secondAttribute="trailing" id="TFM-uN-jpZ"/>
+                    <constraint firstItem="f83-VH-AZp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YOA-hc-hpb"/>
+                    <constraint firstItem="f83-VH-AZp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xc7-7w-6Rm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" name="tint"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnToggle" destination="Gi1-ZZ-O7N" id="nQt-ZC-u9J"/>
+                <outlet property="constraintViewTop" destination="YOA-hc-hpb" id="2Td-TW-A69"/>
+                <outlet property="imageRightArrow" destination="t10-BP-abs" id="JDD-qh-2u8"/>
+                <outlet property="imageview" destination="sQB-3e-qxn" id="6dz-py-B9e"/>
+                <outlet property="lblName" destination="ffn-JR-hCF" id="seT-C9-zbi"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="49.21875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat" width="21" height="21"/>
+        <image name="right arrow" width="6" height="10"/>
+        <image name="switch-off_toggle" width="37" height="24"/>
+        <namedColor name="label">
+            <color red="0.45490196078431372" green="0.54117647058823526" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="0.94117647058823528" green="0.95686274509803926" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tint">
+            <color red="0.97254901960784312" green="0.36078431372549019" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

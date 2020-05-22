@@ -1,0 +1,6 @@
+framework module Pods_SupplyApply {
+  umbrella header "Pods-SupplyApply-umbrella.h"
+
+  export *
+  module * { export * }
+}

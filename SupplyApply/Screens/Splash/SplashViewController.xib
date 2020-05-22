@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Supply_Apply" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Po-mC-e4i">
+                    <rect key="frame" x="30" y="170" width="354" height="556"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Naw-Qa-aFx">
+                            <rect key="frame" x="20" y="20" width="314" height="314"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" name="darkTint"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Naw-Qa-aFx" secondAttribute="height" multiplier="1:1" id="AIb-7w-mje"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashText" translatesAutoresizingMaskIntoConstraints="NO" id="VFo-Ts-noI">
+                            <rect key="frame" x="20" y="354" width="314" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" name="darkTint"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VFo-Ts-noI" firstAttribute="top" secondItem="Naw-Qa-aFx" secondAttribute="bottom" constant="20" id="0g6-EZ-Xnh"/>
+                        <constraint firstItem="Naw-Qa-aFx" firstAttribute="leading" secondItem="8Po-mC-e4i" secondAttribute="leading" constant="20" symbolic="YES" id="0ij-NJ-4gd"/>
+                        <constraint firstAttribute="bottom" secondItem="VFo-Ts-noI" secondAttribute="bottom" constant="20" symbolic="YES" id="PmK-Qe-eiv"/>
+                        <constraint firstAttribute="trailing" secondItem="VFo-Ts-noI" secondAttribute="trailing" constant="20" symbolic="YES" id="TpK-tU-IwA"/>
+                        <constraint firstAttribute="trailing" secondItem="Naw-Qa-aFx" secondAttribute="trailing" constant="20" symbolic="YES" id="UiV-nw-szg"/>
+                        <constraint firstItem="Naw-Qa-aFx" firstAttribute="top" secondItem="8Po-mC-e4i" secondAttribute="top" constant="20" symbolic="YES" id="h0N-fK-9rT"/>
+                        <constraint firstItem="VFo-Ts-noI" firstAttribute="leading" secondItem="8Po-mC-e4i" secondAttribute="leading" constant="20" symbolic="YES" id="kFw-7b-hNz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="background"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Po-mC-e4i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="95U-eF-0qt"/>
+                <constraint firstItem="8Po-mC-e4i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pjP-gD-Efg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Po-mC-e4i" secondAttribute="trailing" constant="30" id="sQr-tr-7hA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splashLogo" width="305" height="321"/>
+        <image name="splashText" width="322" height="91"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkTint">
+            <color red="0.34901960784313724" green="0.33333333333333331" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

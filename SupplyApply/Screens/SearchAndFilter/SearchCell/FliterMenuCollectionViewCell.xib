@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FliterMenuCollectionViewCell" id="gTV-IL-0wX" customClass="FliterMenuCollectionViewCell" customModule="Supply_Apply" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amS-mf-Z7U">
+                        <rect key="frame" x="2" y="2" width="163" height="122"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uzm-n0-elR">
+                                <rect key="frame" x="64" y="8" width="35" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="mfQ-YF-cv8"/>
+                                    <constraint firstAttribute="width" constant="35" id="o1N-30-Cfl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDR-x3-ORY">
+                                <rect key="frame" x="20" y="54" width="123" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="secondaryBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KDR-x3-ORY" secondAttribute="trailing" constant="20" id="7Xp-Ub-mG7"/>
+                            <constraint firstItem="uzm-n0-elR" firstAttribute="centerX" secondItem="amS-mf-Z7U" secondAttribute="centerX" id="8Do-YQ-8Az"/>
+                            <constraint firstItem="uzm-n0-elR" firstAttribute="top" secondItem="amS-mf-Z7U" secondAttribute="top" constant="8" id="TOf-V6-DxE"/>
+                            <constraint firstItem="KDR-x3-ORY" firstAttribute="centerX" secondItem="amS-mf-Z7U" secondAttribute="centerX" id="Xwi-lk-RhP"/>
+                            <constraint firstItem="KDR-x3-ORY" firstAttribute="leading" secondItem="amS-mf-Z7U" secondAttribute="leading" constant="20" id="Z4k-Nj-uuj"/>
+                            <constraint firstItem="KDR-x3-ORY" firstAttribute="top" secondItem="uzm-n0-elR" secondAttribute="bottom" constant="8" id="f8c-bR-V7Q"/>
+                            <constraint firstAttribute="bottom" secondItem="KDR-x3-ORY" secondAttribute="bottom" constant="8" id="lMk-A5-ya7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="amS-mf-Z7U" secondAttribute="trailing" constant="2" id="TVK-2B-KAQ"/>
+                <constraint firstItem="amS-mf-Z7U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="X8t-aw-r5Q"/>
+                <constraint firstAttribute="bottom" secondItem="amS-mf-Z7U" secondAttribute="bottom" constant="2" id="rzX-u6-y0Q"/>
+                <constraint firstItem="amS-mf-Z7U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="xJG-cS-H41"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="167" height="126"/>
+            <connections>
+                <outlet property="imgViewCategory" destination="uzm-n0-elR" id="DoW-RN-FjS"/>
+                <outlet property="lblCategoryName" destination="KDR-x3-ORY" id="uDe-Ax-oKC"/>
+                <outlet property="viewContent" destination="amS-mf-Z7U" id="rsb-G1-mHD"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="123.21428571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="label">
+            <color red="0.45490196078431372" green="0.54117647058823526" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="0.94117647058823528" green="0.95686274509803926" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

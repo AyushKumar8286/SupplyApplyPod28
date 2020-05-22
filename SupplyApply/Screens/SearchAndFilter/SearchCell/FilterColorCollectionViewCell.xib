@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterColorCollectionViewCell" id="gTV-IL-0wX" customClass="FilterColorCollectionViewCell" customModule="Supply_Apply" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="66" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27S-Wl-hxE" userLabel="ViewColor">
+                        <rect key="frame" x="17" y="10" width="32" height="32"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="2D4-Lx-lf7">
+                                <rect key="frame" x="3.5" y="3.5" width="25" height="25"/>
+                                <color key="tintColor" name="label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="U49-D4-Msa"/>
+                                    <constraint firstAttribute="width" constant="25" id="ty1-zr-A1b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="27S-Wl-hxE" secondAttribute="height" multiplier="1:1" id="XxH-fY-Xq8"/>
+                            <constraint firstAttribute="height" constant="32" id="Ybg-Cw-CV6"/>
+                            <constraint firstItem="2D4-Lx-lf7" firstAttribute="centerX" secondItem="27S-Wl-hxE" secondAttribute="centerX" id="vRf-Jk-M8N"/>
+                            <constraint firstItem="2D4-Lx-lf7" firstAttribute="centerY" secondItem="27S-Wl-hxE" secondAttribute="centerY" id="yeJ-Ir-SED"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="27S-Wl-hxE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PXR-rb-rOO"/>
+                <constraint firstItem="27S-Wl-hxE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="gW9-Nl-gJd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="66" height="52"/>
+            <connections>
+                <outlet property="imgViewIcon" destination="2D4-Lx-lf7" id="OT6-sU-CyU"/>
+                <outlet property="viewColor" destination="27S-Wl-hxE" id="a8k-hm-5Fp"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="98.4375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="256" height="256"/>
+        <namedColor name="label">
+            <color red="0.45490196078431372" green="0.54117647058823526" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
